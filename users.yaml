@@ -1,0 +1,22 @@
+{
+    users: [
+      {
+        _id: 'auth-app.reader',
+        userId: UUID("3b78aa5f-a918-46d4-975e-fe2ee59a7043"),
+        user: 'reader',
+        pwd: "reader1234",
+        db: 'auth-app',
+        roles: [ { role: 'read', db: 'auth-app' } ],
+        mechanisms: [ 'SCRAM-SHA-1', 'SCRAM-SHA-256' ]
+      },
+      {
+        _id: 'auth-app.readerWriter',
+        userId: UUID("7ddef540-fb4a-4b6d-a77b-fae5e00fa381"),
+        user: 'readerWriter',
+        pwd: "readerWriter1234",
+        db: 'auth-app',
+        roles: [ { role: 'readWrite', db: 'auth-app' } ],
+        mechanisms: [ 'SCRAM-SHA-1', 'SCRAM-SHA-256' ]
+      }
+    ]
+  }
